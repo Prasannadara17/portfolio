@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 scrollUp.addEventListener("click", () => {
@@ -28,3 +29,21 @@ VanillaTilt.init(document.querySelectorAll(".project-card, .icon-card"), {
   glare: true,
   "max-glare": 0.4
 });
+=======
+// scroll to top functionality
+const scrollUp = document.querySelector("#scroll-up");
+
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+burger.addEventListener("click", () => {
+    ul.classList.toggle("show");
+  });
+>>>>>>> adb98bf4cf14737140509d9ffa740b4de96d6cf8

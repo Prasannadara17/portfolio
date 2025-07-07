@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Lakshmi Prasanna Dara</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+  <nav>
+    <h1 style="color: white; margin-left: 2rem;"></h1>
+    <ul class="navigation" id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about" data-aos="fade-up">
+    <div class="hero-left">
+      <div class="name-block">
+        <h1 class="main-name">LAKSHMI PRASANNA DARA</h1>
+        <img src="https://res.cloudinary.com/dm0p9yojx/image/upload/v1722595291/photo-output_tfqxz1.jpg" alt="profile" class="hero-img" />
+      </div>
+    </div>
+    <div class="hero-right">
+      <h2 class="bio-title">I'm a Web Developer</h2>
+      <p class="bio-text"> Motivated Computer Science student with a strong foundation in programming and algorithms. Proficient in
+        Programming languages, with solid problem-solving skills. Passionate about innovation and eager to contribute
+        to software development teams. Seeking an internship to leverage technical expertise and drive impactful innovation</p>
+    </div>
+  </section>
+  <!-- Download Resume & CV -->
+  <section class="downloads" data-aos="fade-up">
+    <h2>Download My Documents</h2>
+    <div class="download-buttons">
+        <a href="Lakshmi_Prasanna_Resume.pdf" download class="btn-download">Download Resume</a>
+      <!-- <a href="Lakshmi_Prasanna_CV.pdf" download class="btn-download">Download CV</a> -->
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills" data-aos="fade-right">
+    <h2 class="skill-header">My Skills</h2>
+    <div class="skills-list">
+      <p><strong>Programming Languages:</strong> C, C++, Java, JavaScript, HTML5, CSS, Python</p>
+      <p><strong>AI & ML:</strong> Machine Learning (Intermediate), Artificial Intelligence (Beginner)</p>
+      <p><strong>Databases:</strong> SQL, MongoDB</p>
+      <p><strong>Frameworks:</strong> React JS, Node JS, Express JS, Bootstrap</p>
+      <p><strong>Tools & IDEs:</strong> Git, GitHub, VS Code, Linux</p>
+      <p><strong>Course Work:</strong> DBMS, OOP, Software Development, Networks, OS, DSA</p>
+    </div>
+  </section>
+
+ <!-- Projects -->
+ <section class="projects" id="projects">
+    <h2 class="projects-title">My Projects</h2>
+    <div class="projects-container">
+  
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvrTAXEcS60Rd0UK6kvNvrta8aU6R6sL2w2A&s" class="project-pic" />
+            <h3 class="project-title">Weather App</h3>
+          </div>
+          <div class="flip-card-back">
+            <!-- <h3>Weather App</h3> -->
+            <p>This application uses a weather API to display real-time weather information like temperature, humidity, and conditions.</p>
+            <p>Designed with responsive UI using JavaScript, HTML5, and CSS3 for a dynamic and intuitive user experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Screenshot 2024-10-04 100307.png" class="project-pic" />
+            <h3 class="project-title">Events Aggregator</h3>
+          </div>
+          <div class="flip-card-back">
+            <!-- <h3>Events Aggregator</h3> -->
+            <p>A full-stack web platform for managing and listing college events with filtering and sorting capabilities.</p>
+            <p>Built using React, Node.js, MongoDB & Express with role-based access and real-time notifications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="0_nNi5gS2lIbIWmD9p.png" class="project-pic" style="height: 150px; object-fit: contain;" />
+            <h3 class="project-title">HYPERPARAMETER TUNING OF DRL MODELS TO IMPROVE WLANs PERFORMANCE</h3>
+          </div>
+          <div class="flip-card-back">
+         <!-- <h3>HYPERPARAMETER TUNING OF DRL MODELS TO IMPROVE WLANs PERFORMANCE</h3> -->
+            <p>This AI/ML project enhances WLAN throughput using a custom Actor-Critic DRL agent trained in NS-3 simulations.</p>
+            <p>Hyperparameters were optimized using Optuna, and training metrics were logged via WandB to track performance. This setup ensured stable learning and robust generalization during wireless network simulations.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <section class="contact" id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <div class="contact-form-container glass" style="text-align: center;">
+      <p>If you'd like to get in touch, feel free to reach out via email or social platforms below:</p>
+      <p><strong>Email:</strong> <a href="mailto:prasannadara17@gmail.com" style="color: var(--secondary-color);">prasannadara17@gmail.com</a></p>
+      
+      <div style="margin-top: 1.5rem;">
+        <a href="https://www.linkedin.com/in/lakshmi-prasanna-dara-a76269281/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="socicon" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/Prasannadara17" target="_blank">
+          <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" class="socicon" alt="GitHub" />
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  </section>
+  
+ 
+  <!-- <div class="socials">
+     <a href="https://www.instagram.com/prasannadara_03/" target="_blank"><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg" class="socicon" /></a> -->
+    <!-- <a href="https://www.linkedin.com/in/lakshmi-prasanna-dara-a76269281/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="socicon" /></a>
+    <a href="https://github.com/Prasannadara17" target="_blank"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" class="socicon" /></a> -->
+
+  <!-- Scroll to Top -->
+  <div class="scroll-up" id="scroll-up">
+    <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" class="up-arrow" />
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

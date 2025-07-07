@@ -1,0 +1,300 @@
+:root {
+  --background-color: #0f0f0f;
+  --text-color: #ffffff;
+  --light-text-color: #d0d0d0;
+  --primary-color: #ffffff;
+  --secondary-color: #c0ff61;
+  --card-bg: #1a1a1a;
+  --skills-bg: #0f0f0f;
+  --projects-bg: #0f0f0f;
+  --contact-bg: #1c1c1c;
+  --about-bg: linear-gradient(to right, #000000 50%, #e0e0e0 50%);
+  --shadow: rgba(0, 0, 0, 0.6);
+  --border-radius: 10px;
+  --transition: 0.3s ease;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Navigation */
+nav {
+  background: transparent;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: var(--about-bg);
+  padding: 4rem 6rem;
+  color: var(--text-color);
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: #000000;
+  padding-left: 3rem;
+}
+
+.hero-img {
+  width: 350px;
+  border-radius: var(--border-radius);
+  background: #e0e0e0;
+}
+
+.bio-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+.bio-text {
+  font-size: 1.1rem;
+  max-width: 500px;
+  line-height: 1.6;
+  color: #222222;
+}
+
+/* Name Block */
+.name-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-name {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Resume/CV Download Section */
+.downloads {
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn-download {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-download:hover {
+  opacity: 0.85;
+}
+
+/* Skills Section */
+.skills {
+  padding: 2rem;
+  background: var(--skills-bg);
+  color: var(--text-color);
+}
+
+.skills-list p {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 3px 10px var(--shadow);
+  margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects {
+  padding: 2rem;
+  background: var(--projects-bg);
+  color: var(--text-color);
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 320px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: 0 3px 10px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.flip-card-front .project-title,
+.flip-card-back h3 {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  text-align: center;
+  color: var(--light-text-color);
+  font-size: 0.95rem;
+  padding: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem;
+  background: var(--contact-bg);
+  color: var(--light-text-color);
+}
+
+.contact-form-container {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 3px 10px var(--shadow);
+  margin-bottom: 1rem;
+}
+
+/* Form Inputs */
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #444;
+  background-color: #222;
+  color: var(--light-text-color);
+}
+
+/* Form Button */
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  opacity: 0.85;
+}
+
+/* Social Icons */
+.socials {
+  position: fixed;
+  right: 1rem;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.socicon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Scroll to Top */
+.scroll-up {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 40px;
+}
